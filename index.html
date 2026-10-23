@@ -4,11 +4,73 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>COORDINATE · Obra</title>
-<meta http-equiv="refresh" content="0; url=/Visor-de-obra/visita.html">
-<link rel="canonical" href="/Visor-de-obra/visita.html">
-<style>body{margin:0;min-height:100vh;display:grid;place-items:center;background:#121826;color:#e9eef5;font:16px system-ui,sans-serif}a{color:#8ebdf0}</style>
+<meta name="description" content="COORDINATE · Obra: parte diario de visita, punch list, calidad, seguimiento y control de obra en el teléfono, sin señal.">
+<link rel="icon" href="/Visor-de-obra/icono-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
+<style>
+:root{--fondo:#121826;--sup:#1c2433;--texto:#e9eef5;--tenue:#9dafc6;--acento:#62a0e8;--banda:#1b3560;--borde:#34425b}
+@media (prefers-color-scheme: light){:root{--fondo:#eef1f6;--sup:#fff;--texto:#121826;--tenue:#4a5870;--acento:#3d7cc4;--banda:#dce7f5;--borde:#cdd6e3}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--fondo);color:var(--texto);font:16px/1.55 Inter,system-ui,-apple-system,"Segoe UI",sans-serif}
+main{max-width:860px;margin:0 auto;padding:32px 16px 48px}
+.marca{display:inline-flex;align-items:center;font-weight:700;letter-spacing:.14em;font-size:28px}
+.marca svg{width:.9em;height:.9em;margin:0 .02em}
+.lema{color:var(--tenue);margin:4px 0 28px}
+h1{font-size:30px;line-height:1.2;margin:0 0 10px}
+h2{font-size:15px;letter-spacing:.08em;text-transform:uppercase;color:var(--acento);margin:34px 0 10px}
+.botones{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0}
+.boton{display:inline-block;padding:12px 18px;border-radius:10px;border:1px solid var(--borde);color:var(--texto);text-decoration:none;font-weight:600;background:var(--sup)}
+.boton.principal{background:var(--acento);border-color:var(--acento);color:#0c1628}
+.rejilla{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+.tarjeta{background:var(--sup);border:1px solid var(--borde);border-radius:12px;padding:14px 16px}
+.tarjeta strong{display:block;margin-bottom:4px}
+.tarjeta p{margin:0;color:var(--tenue);font-size:15px}
+ul{padding-left:20px}
+a{color:var(--acento)}
+footer{margin-top:40px;padding-top:16px;border-top:1px solid var(--borde);color:var(--tenue);font-size:14px}
+</style>
 </head>
 <body>
-<p>Abriendo <a href="/Visor-de-obra/visita.html">COORDINATE · Visita de obra</a>…</p>
+<main>
+  <div class="marca" aria-label="COORDINATE">C<svg viewBox="10 10 44 44" aria-hidden="true"><g fill="currentColor"><circle cx="32.00" cy="14.67" r="4.53"/><circle cx="44.25" cy="19.75" r="4.53"/><circle cx="49.33" cy="32.00" r="4.53"/><circle cx="44.25" cy="44.25" r="4.53"/><circle cx="32.00" cy="49.33" r="4.53"/><circle cx="19.75" cy="44.25" r="4.53"/><circle cx="14.67" cy="32.00" r="4.53"/><circle cx="19.75" cy="19.75" r="4.53"/></g><circle cx="32" cy="32" r="6" fill="#62a0e8"/></svg>ORDINATE</div>
+  <p class="lema">Los problemas se resuelven en el modelo, no en obra.</p>
+
+  <h1>COORDINATE · Obra</h1>
+  <p>La app de campo de COORDINATE para supervisores y residentes de obra: el parte diario, el punch list,
+     la calidad, el avance y el control de la obra en el teléfono, también sin señal. Gratuita, sin anuncios.</p>
+  <div class="botones">
+    <a class="boton principal" href="/Visor-de-obra/visita.html">Abrir la app</a>
+    <a class="boton" href="https://play.google.com/apps/testing/com.coordinate.bitacora">Prueba en Google Play</a>
+    <a class="boton" href="/Visor-de-obra/privacidad.html">Política de privacidad</a>
+  </div>
+
+  <h2>Qué hace</h2>
+  <div class="rejilla">
+    <div class="tarjeta"><strong>Parte diario</strong><p>Personal, trabajos con hora, incidencias que pasan a la visita siguiente, fotos, firma e informe en PDF.</p></div>
+    <div class="tarjeta"><strong>Planos y punch list</strong><p>Notas numeradas y medidas sobre planos PDF o DXF; repasos con fotos antes y después, marcados en el plano.</p></div>
+    <div class="tarjeta"><strong>Calidad</strong><p>Inspecciones con checklist y liberación; vaciados con camiones, probetas y agenda de roturas.</p></div>
+    <div class="tarjeta"><strong>Seguimiento</strong><p>Avance con curva S, minutas con acuerdos y días afectados para prórrogas.</p></div>
+    <div class="tarjeta"><strong>Control</strong><p>RFI, órdenes de cambio, recepción de materiales y seguridad (charlas, EPP, permisos, incidentes), con firmas en el teléfono.</p></div>
+    <div class="tarjeta"><strong>Equipo</strong><p>Obras compartidas por papeles (administrador, editor, lector, contratista), panel diario y semanal, modelo 3D IFC.</p></div>
+  </div>
+
+  <h2>Cuentas de Google (opcional)</h2>
+  <p>La app funciona sin cuenta. Si el usuario vincula su cuenta de Google, la app pide permiso para:</p>
+  <ul>
+    <li><strong>Gmail · enviar correo</strong> (<code>gmail.send</code>): mandar el parte o el informe de la obra por correo,
+        desde la propia cuenta del usuario, cuando lo pide. La app no lee el correo.</li>
+    <li><strong>Google Drive · archivos de la app</strong> (<code>drive.file</code>): guardar informes y copias de seguridad,
+        y las fotos, firmas y planos de las obras compartidas, en la carpeta «COORDINATE Visitas»; sólo ve los archivos que crea.</li>
+  </ul>
+  <p>La información recibida de las API de Google se usa sólo para esas funciones y cumple la
+     <a href="https://developers.google.com/terms/api-services-user-data-policy">Política de datos de usuario de los servicios de API de Google</a>,
+     incluidos los requisitos de uso limitado. Detalles en la <a href="/Visor-de-obra/privacidad.html">política de privacidad</a>.</p>
+
+  <footer>
+    COORDINATE · coordinación BIM y gestión de datos de proyectos · Santo Domingo, República Dominicana ·
+    <a href="mailto:hola@coordinate.do">hola@coordinate.do</a> · <a href="/Visor-de-obra/privacidad.html">Privacidad</a>
+  </footer>
+</main>
 </body>
 </html>
